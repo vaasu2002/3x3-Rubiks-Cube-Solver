@@ -11,3 +11,14 @@ The Rubik's Cube is a 3D combination puzzle invented in 1974 by Hungarian sculpt
   3) **Center Cubie:** Cubies with only one side coloured and are present at the center of each side of the Rubik’s Cube. There are a total of 6 Center Cubbies. It is important to note that all center cubbies are statically positioned. No matter how you rotate/twist the Rubik’s Cube, the center cubbies will not change their positions relative to each other.
   4) **Edge Cubie:** Cubbies which are coloured on two of their sides. There are a total of 12 edge cubbies. Eg: Red-Yellow Edge.
   5) **Corner Cubie:** Cubbies with three of their sides coloured. There are a total of 8 corner cubbies. Eg: White-Red-Blue Corner Cubie.
+
+### Operations and Notation
+
+There are 6 faces of a Rubik's cube, we can perform 6 rotations by rotating any one of the 6 sides clockwise.
+
+**Label of Rubik's Cube face-**
+- The face facing you would be Front (or F), in your case, it should be White. 
+- The face facing up would be Up (or U), in your case, it should be Red.
+- The face facing down would be Down (or D), in your case, it could be Orange. 
+- The face facing away from you, that is, the face opposite to the White face is Back (or B), in your case it could be Yellow. 
+- The faces left and right to the White face are Left (or L) and Right (or R), in your case it could be Blue and Green respectively.

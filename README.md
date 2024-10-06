@@ -49,3 +49,27 @@ This gives us a list of **18 possible moves** we can make on a Rubik’s Cube:
 | D 	| D’ 	|D2 	 |
 | R 	| R’ 	|R2 	 |
 | B 	| B’ 	|B2 	 |
+
+[Simulation of rotations](https://ruwix.com/the-rubiks-cube/notation/advanced/)
+
+# Project Tasks
+- [ ] Task 1: Representing a Generic Cube in Code
+  - There are various ways to model a Rubik’s Cube. All of those implementations are going to have some common features.
+  - So, instead of keeping all of these implementations completely independent, we can create a create abstract classes and pure virtual functions which will act a blueprint for them which will state all things that the Model should implement.
+- [ ] Task 2: 3D Array Representation
+  - Simply storing the colors of a face in a 3-dimensional array of size 6 x 3 x 3, which would look something like cube[SIDE][ROW][COL].
+  - cube[ i ][ j ][ k ] → color of the ith side, jth row and kth col.
+  - Indexing faces:-
+    - Up    → 0 (White)
+    - Left  → 1 (Green)
+    - Front → 2 (Red)
+    - Right → 3 (Blue)
+    - Back  → 4 (Orange)
+    - Down  → 5 (Yellow)
+- [ ] Task 3: 1D Representation
+  - A single array of 54 characters. 
+  - Each position holds the color of the particular cubie’s side. 
+  - Since there are 6 sides and each side has 9 colors, the size of the array is going to be 6 * 9 = 54
+  - cube[ i ] → color of the i-th cubie side, when indexed sequentially
+  - Faces would be indexed like: {Up, Left, Front, Right, Back, Down}. Rows and Columns would be indexed for each face from top to bottom and left to right.
+

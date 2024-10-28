@@ -60,6 +60,8 @@ class BaseCube{
 
         BaseCube &executeInversionOfMove(Move move);
 
+        std::vector<Move> shuffle(unsigned int times);
+
         // Virtual functions for all rotational moves
         virtual BaseCube& f() = 0;
         virtual BaseCube& fPrime() = 0;

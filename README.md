@@ -1,4 +1,4 @@
-# 3x3x3 Rubik's Cube Cracker 
+# 3x3 Rubik's Cube Cracker 
 
 While learning DSA, I wanted to create a pure DSA-focused project but wasn’t sure what to build until I came across an article that explained how a Rubik’s Cube can be solved using graph algorithms. This is a passion project where I apply my DSA and competitive programming skills to solve the cube using various graph algorithms and compare them. I’ll also explore different ways to represent the Rubik’s Cube—a physical entity in a form the computer can process. There are different ways to model a Rubik's cube, but we would ideally want to model it in a way that is fast to do operations. 
 

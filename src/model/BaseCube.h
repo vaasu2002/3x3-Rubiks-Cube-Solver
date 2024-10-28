@@ -8,7 +8,6 @@
 #include <string>
 #include <vector>
 
-
 class BaseCube{
     public:
         // Correction of error: Polymorphic class 'BaseCube' has a non-virtual public destructor
@@ -56,6 +55,24 @@ class BaseCube{
          * @return string representation of a move.
          */
         static std::string getMove(Move move);
+
+        BaseCube &executeMove(Move move);
+
+        BaseCube &executeInversionOfMove(Move move);
+
+        // Virtual functions for all rotational moves
+        virtual BaseCube& f() = 0;
+        virtual BaseCube& fPrime() = 0;
+        virtual BaseCube& u() = 0;
+        virtual BaseCube& uPrime() = 0;
+        virtual BaseCube& l() = 0;
+        virtual BaseCube& lPrime() = 0;
+        virtual BaseCube& r() = 0;
+        virtual BaseCube& d() = 0;
+        virtual BaseCube& dPrime() = 0;
+        virtual BaseCube& rPrime() = 0;
+        virtual BaseCube& b() = 0;
+        virtual BaseCube& bPrime() = 0;
 };
 
 #endif BASECUBE_H
